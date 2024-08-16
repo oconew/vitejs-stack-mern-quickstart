@@ -10,7 +10,12 @@ try {
 } catch (e) {
   console.error(e)
 }
-let db = conn.db('db')
+let db
+if (conn) {
+  db = conn.db('db')
+} else {
+  db = null
+}
 export default db
 
 // import mongoose from 'mongoose'
