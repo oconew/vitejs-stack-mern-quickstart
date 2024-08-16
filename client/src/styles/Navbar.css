@@ -1,0 +1,139 @@
+nav#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 68px;
+    z-index: 100;
+}
+
+nav#navbar {
+    border-bottom: 1px solid var(--secondary);
+}
+nav#navbar .left-section {
+    width: 50%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+nav#navbar .right-section {
+    width: 50%;
+    height: 100%;
+}
+
+nav#navbar .left-section ul {
+    list-style-type: none; /* Remove bulletpoints */
+}
+nav#navbar .left-section ul li {
+    float: left; /* Change links to display horizontally and format the buttons */
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-family: 'Montserrat';
+}
+
+nav#navbar .left-section ul li a {
+    text-decoration: none; /* Remove underline from link */
+    font-weight: 300;
+    transition: .4s;
+}
+
+nav#navbar .left-section ul li a:hover {
+    font-weight: 500;
+    color: black;
+}
+
+nav#navbar .home-button {
+    position: relative;
+    left: 45%;
+    top: 20px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0px;
+}
+
+nav#navbar .home-button img {
+    position: relative; 
+    top: 3px;
+    left: 3px;
+    width: 68px;
+    height: 68px;
+}
+
+nav#navbar .chat-button {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0px;
+    
+}
+
+nav#navbar .chat-button svg {
+    position: relative; 
+    /* top: 18px; */
+    left: 18px;
+    /* width: 68px;
+    height: 68px; */
+}
+
+nav#navbar #burger-sub-menu {
+    
+    width: 100%;
+    padding-top: 2rem;
+    background: var(--tertiary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    -webkit-transition: height 0.3s ease-in;
+    -moz-transition: height 0.3s ease-in;
+    -o-transition: height 0.3s ease-in;
+    -ms-transition: height 0.3s ease-in;
+    transition: height 0.3s ease-in;
+    opacity: 0;
+    position: absolute;
+    top: -500px;
+    z-index: 2;
+}
+
+nav#navbar #burger-sub-menu a {
+    padding-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: azure;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+
+nav#navbar .left-section .burger-menu {
+    display: none;
+    position: absolute;
+}
+
+nav#navbar .left-section .burger-menu .focused {
+    display: block;
+}
+
+/* small screens */
+@media screen and (max-width: 829px) {
+    nav#navbar .left-section ul li {
+        display: none;
+    }
+
+    nav#navbar .left-section .burger-menu {
+        display: block;
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 830px) {
+    nav#navbar .left-section .burger-menu {
+        display: none;
+    }
+}

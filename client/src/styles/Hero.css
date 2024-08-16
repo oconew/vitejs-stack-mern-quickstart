@@ -1,0 +1,113 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.menus {
+  width: 100vw;
+  height: 900px;
+  background-image: url("/yakitoris.jpeg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.book {
+  width: 100vw;
+  height: 900px;
+  background-image: url("/phoenix-room.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero h3 {
+  color: var(--secondary);
+  font-size: large;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid var(--tertiary);
+}
+
+.hero p {
+  padding-top: 20px;
+  color: var(--secondary);
+  font-size: large;
+  font-family: "Montserrat";
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.hero .food-button {
+  position: relative;
+  bottom: -40px;
+  padding: 10px;
+  border: 3px solid var(--secondary);
+  outline: 5px solid var(--primary);
+  border-radius: 500px;
+  left: 15%;
+}
+
+.hero .drinks-button {
+  bottom: -40px;
+  padding: 10px;
+  border: 3px solid var(--secondary);
+  outline: 5px solid var(--primary);
+  border-radius: 500px;
+  right: 15%;
+}
+
+.hero .button p {
+  color: azure;
+  position: absolute;
+  bottom: -75px;
+}
+
+.hero .food p {
+  bottom: -100px;
+}
+
+.hero .drink p {
+  bottom: -100px;
+}
+
+.hero .booking p {
+  bottom: -100px;
+}
+
+.hero .view p {
+  bottom: -100px;
+}
+
+/* Large Screens */
+@media screen and (min-width: 871px) {
+  .hero .food p {
+    font-size: x-large;
+    bottom: -125px;
+  }
+
+  .hero .drink p {
+    font-size: x-large;
+    bottom: -125px;
+  }
+
+  .hero .booking p {
+    font-size: x-large;
+    bottom: -125px;
+  }
+
+  .hero .view p {
+    font-size: x-large;
+    bottom: -125px;
+  }
+}

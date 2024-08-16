@@ -1,0 +1,37 @@
+.contact {
+  width: 100vw;
+  background: url(/contact-background.jpg);
+  background-size: cover;
+}
+
+.contact .address {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding: 50px;
+}
+
+.contact h3 {
+  color: azure;
+  font-size: xx-large;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid var(--tertiary);
+}
+
+.contact p {
+  color: azure;
+  font-size: larger;
+  font-family: "Montserrat";
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+
+.contact .contact-button p {
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+}

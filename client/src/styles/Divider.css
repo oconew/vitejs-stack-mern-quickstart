@@ -1,0 +1,28 @@
+.divider {
+  min-width: 100vw;
+  background-image: url("divider.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.divider h3:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  margin-bottom: -20px;
+  border-bottom: 4px solid var(--tertiary);
+}
+
+.divider h3 {
+  position: absolute;
+  margin: auto;
+  color: azure;
+  font-size: large;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+}

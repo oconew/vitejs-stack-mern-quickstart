@@ -1,0 +1,31 @@
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lander {
+  background-image: url("/Boat-Lander.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+
+.lander h3 {
+  color: azure;
+  font-size: large;
+  font-family: "Montserrat";
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: absolute;
+}
+
+.lander .scroll {
+  height: 10%;
+  width: auto;
+  position: absolute;
+  bottom: 5%;
+}
+
+#video {
+  min-width: 100vw;
+}

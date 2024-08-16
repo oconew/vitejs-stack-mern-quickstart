@@ -1,0 +1,292 @@
+body {
+  background: var(--secondary);
+  flex-direction: column;
+}
+
+.napkin {
+  background: url('/resources/napkin.png');
+  background-size: cover;
+}
+
+a {
+  text-decoration: none !important;
+  text-emphasis: none;
+}
+
+body h2 {
+  font-size: xx-large;
+  font-family: 'Cormorant';
+  font-weight: 900;
+  color: var(--secondary);
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  border-bottom: 4px solid var(--tertiary);
+}
+
+.cover {
+  padding-top: inherit;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+}
+
+#pages {
+  z-index: 10;
+  flex-direction: column;
+  position: fixed;
+  right: 5%;
+  top: 35%;
+}
+
+.menu-container {
+  position: fixed;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-container::-webkit-scrollbar {
+  /*Chrome, Safari, Edge*/
+  display: none;
+}
+
+.menu-slide {
+  scroll-snap-align: start;
+  flex-direction: column;
+  margin: auto;
+  /* padding-left: 5%; */
+  scroll-snap-align: start;
+  width: 100vw;
+  height: calc(100vh);
+}
+
+.menu-slide h2 {
+  font-size: xx-large;
+  color: azure;
+  /* margin-bottom: 20px; */
+  font-weight: 200;
+  font-size: 100px;
+}
+
+.menu-button {
+  width: 300px;
+  height: 50px;
+  align-self: center;
+  border-radius: 10px;
+  border-style: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: 'Montserrat';
+}
+
+#pages .menu-page-bullet {
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  margin-top: 40%;
+  margin-bottom: 40%;
+  background-color: gray;
+}
+
+#pages [aria-current]:not([aria-current='false']) {
+  background-color: var(--tertiary);
+}
+
+.menu-arrow {
+  position: fixed;
+  left: 45%;
+  transform: rotate(45deg);
+  /* border-color: var(--tertiary); */
+  border: 8px solid var(--tertiary);
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.4s;
+}
+
+#next-arrow:hover {
+  transform: translateY(10px) rotate(45deg); /* Zoom 110% */
+}
+#prev-arrow:hover {
+  transform: translateY(-10px) rotate(45deg); /* Zoom 110% */
+}
+
+#prev-arrow {
+  top: 15%;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+
+#next-arrow {
+  bottom: 5%;
+  border-left: 0px;
+  border-top: 0px;
+}
+
+.starters-sharers {
+  background-image: url('/food/wings-1.jpeg');
+}
+
+.mains {
+  background-image: url('/food/mushroom-pasta-2.jpeg');
+}
+
+.burgers-pizzas {
+  background-image: url('/food/bbq-chicken-pizza-1.jpeg');
+}
+
+.steak {
+  background-image: url('/food/10oz-sirloin-2.jpeg');
+}
+
+.yakitoris {
+  background-image: url('/food/steak-yakitori-1.jpeg');
+}
+
+.salads-sides {
+  background-image: url('/food/nachos-2.jpeg');
+}
+
+.pasta {
+  background-image: url('/food/mushroom-pasta-2.jpeg');
+}
+
+.roast {
+  background-image: url('/food/lamb-1.jpeg');
+}
+
+.burgers {
+  background-image: url('/food/10oz-sirloin-2.jpeg');
+}
+
+.desserts {
+  background-image: url('/food/desserts.jpeg');
+}
+
+.beer-cider {
+  background-image: url('/drinks/beer.jpg');
+}
+
+.cocktails {
+  background-image: url('/drinks/cocktails.jpeg');
+  background-position: center 40%;
+}
+
+.gin {
+  background-position: center 80%;
+  background-image: url('/drinks/gins.jpeg');
+}
+
+.spirits {
+  background-image: url('/drinks/gins.jpg');
+}
+
+.soft-drinks {
+  background-image: url('/drinks/soft-drinks.jpeg');
+}
+
+.wines {
+  background-image: url('/drinks/wine.jpeg');
+}
+
+/* small screens */
+@media screen and (max-width: 800px) {
+  #pages {
+    display: none;
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 100px;
+  /* height: 500px; */
+  background: url(/resources/napkin.png);
+  background-size: cover;
+}
+
+.drink:nth-of-type(odd) {
+  margin-bottom: 100px;
+}
+
+.drink:nth-of-type(even) {
+  margin-top: 100px;
+  flex-direction: row-reverse;
+}
+
+.food .product-item img {
+  display: none;
+}
+
+.food:nth-of-type(odd) {
+  margin-bottom: 0px;
+}
+
+.food:nth-of-type(even) {
+  margin-top: 0px;
+  flex-direction: row-reverse;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 40%;
+  /* background-color: var(--secondary); */
+  height: 300px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: var(--secondary);
+  background: rgba(175, 202, 175, 0.6);
+  padding: 20px;
+}
+
+.product-name {
+  font-family: 'Cormorant';
+  font-size: xx-large;
+  font-weight: 800;
+  border-bottom: 2px solid var(--tertiary);
+  margin-bottom: 15px;
+  text-align: center;
+  align-self: center;
+}
+
+.product-description {
+  font-family: 'Playfair display';
+}
+
+.product .product-item img {
+  height: 300px;
+  width: 150px;
+}
+
+/* Small Screens */
+@media screen and (max-width: 600px) {
+  .product {
+    width: 95%;
+  }
+
+  .drink:nth-of-type(even) {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .drink:nth-of-type(odd) {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
