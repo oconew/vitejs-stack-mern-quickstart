@@ -19,10 +19,10 @@ export default function ProductGrid(props: { category: string | undefined }) {
   React.useEffect(() => {
     if (props.category) {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
-      axios
+      void axios
         .get('http://localhost:5050/posts/' + props.category)
         .then((response) => {
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-argument
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           setProducts(response.data)
         })
     }
@@ -35,7 +35,7 @@ export default function ProductGrid(props: { category: string | undefined }) {
   return (
     <>
       <div className="product-grid napkin relative align-center justify-center">
-        {products.map(({ name, category, price, description, image_path }) => {
+        {products.map(({ name, category, description, image_path }) => {
           let type
           if (
             category === 'starters-sharers' ||

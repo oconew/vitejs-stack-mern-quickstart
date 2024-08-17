@@ -12,5 +12,6 @@
     "mongodb": "^5.7.0",
     "mongoose": "^7.3.4"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {"start": "node index.mjs"}
 }
