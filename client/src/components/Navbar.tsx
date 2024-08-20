@@ -19,7 +19,7 @@ function Navbar() {
             <ul className="top-1/5 absolute">
               <li>
                 <a
-                  href="/index.html#menu"
+                  href="/#menu"
                   className="transition-bold text-secondary"
                 >
                   Menu
@@ -27,7 +27,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="index.html#booking"
+                  href="/#booking"
                   className="transition-bold text-secondary"
                 >
                   Bookings
@@ -35,7 +35,7 @@ function Navbar() {
               </li>
               <li>
                 <a
-                  href="index.html#contact"
+                  href="/#contact"
                   className="transition-bold text-secondary"
                 >
                   Contact
@@ -90,10 +90,10 @@ function Navbar() {
           <a className="navbar-level-two-items" href="/menu/drinks.html">
             Drinks
           </a>
-          <a className="navbar-level-two-items" href="/index.html#booking">
+          <a className="navbar-level-two-items" href="/#booking">
             Bookings
           </a>
-          <a className="navbar-level-two-items" href="/index.html#contact">
+          <a className="navbar-level-two-items" href="/#contact">
             Contact
           </a>
         </nav>

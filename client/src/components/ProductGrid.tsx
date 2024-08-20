@@ -20,7 +20,7 @@ export default function ProductGrid(props: { category: string | undefined }) {
     if (props.category) {
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
       void axios
-        .get('http://localhost:5050/posts/' + props.category)
+        .get('http://213.165.92.198:5050/posts/' + props.category)
         .then((response) => {
           // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           setProducts(response.data)

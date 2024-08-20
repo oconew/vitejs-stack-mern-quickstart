@@ -1,6 +1,6 @@
 .divider {
-  min-width: 100vw;
-  background-image: url("divider.jpg");
+  width: 100vw;
+  background-image: url("/resources/divider.jpg");
   background-position: center;
   background-size: cover;
   min-height: 300px;

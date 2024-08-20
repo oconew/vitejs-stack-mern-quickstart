@@ -13,20 +13,20 @@ function Hero(props: { id?: string }) {
             <div className="button food">
               <a
                 style={{ textDecoration: "none" }}
-                href="/menu/food.html"
+                href="/menu/food"
                 className="absolute left-6"
               >
                 <div className="food-button transition-transform block absolute bg-primary left-6 bg-primary">
-                  <img src="/icons8-restaurant-50.png" />
+                  <img src="/resources/icons8-restaurant-50.png" />
                 </div>
                 <p className="transition-bold absolute left-6">Food Menu</p>
               </a>
             </div>
 
             <div className="button drink">
-              <a style={{ textDecoration: "none" }} href="menu/drinks">
+              <a style={{ textDecoration: "none" }} href="menu/drink">
                 <div className="drinks-button transition-transform block absolute right-6 bg-primary">
-                  <img src="/icons8-drink-50.png" />
+                  <img src="/resources/icons8-drink-50.png" />
                 </div>
                 <p className="transition-boldabsolute right-6">
                   Drinks <br /> Menu
@@ -55,7 +55,7 @@ function Hero(props: { id?: string }) {
                   className="absolute left-6"
                 >
                   <div className="food-button transition-transform block absolute bg-primary left-6">
-                    <img src="/icons8-restaurant-table-50.png" />
+                    <img src="/resources/icons8-restaurant-table-50.png" />
                   </div>
                   <p className="transition-bold absolute left-6">
                     Make a Booking
@@ -70,7 +70,7 @@ function Hero(props: { id?: string }) {
               >
                 <div className="drinks-button transition-transform block absolute right-6 bg-primary">
                   <a title="View Bookings" href="">
-                    <img src="/icons8-book-50.png" />
+                    <img src="/resources/icons8-book-50.png" />
                   </a>
                 </div>
                 <p className="transition-bold absolute right-6">

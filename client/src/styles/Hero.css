@@ -14,7 +14,7 @@
 .menus {
   width: 100vw;
   height: 900px;
-  background-image: url("/yakitoris.jpeg");
+  background-image: url("/resources/yakitoris.jpeg");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -23,7 +23,7 @@
 .book {
   width: 100vw;
   height: 900px;
-  background-image: url("/phoenix-room.jpg");
+  background-image: url("/resources/phoenix-room.jpg");
   background-position: center;
   background-size: cover;
   text-align: center;

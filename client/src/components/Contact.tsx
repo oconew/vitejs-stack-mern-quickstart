@@ -47,17 +47,17 @@ function Contact() {
           </p>
 
           <div className="contact-button transition-transform">
-            <img src="/icons8-message-50.png" />
+            <img src="/resources/icons8-message-50.png" />
             <p style={{ paddingTop: "15px" }}>CONTACT US</p>
           </div>
 
           <div className="contact-button transition-transform">
-            <img src="/icons8-message-50(1).png" />
+            <img src="/resources/icons8-message-50(1).png" />
             <p>FEEDBACK</p>
           </div>
 
           <div className="contact-button transition-transform">
-            <img src="/icons8-tablecloth-50.png" />
+            <img src="/resources/icons8-tablecloth-50.png" />
             <p>BOOK A TABLE</p>
           </div>
         </div>

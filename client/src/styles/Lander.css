@@ -5,9 +5,10 @@
   background-size: cover;
 }
 .lander {
-  background-image: url("/Boat-Lander.jpg");
+  background-image: url("/resources/Boat-Lander.jpg");
   height: 100vh;
   width: 100vw;
+  margin-bottom: 0;
 }
 
 .lander h3 {
@@ -27,5 +28,13 @@
 }
 
 #video {
-  min-width: 100vw;
+  width: 100vw;
+}
+
+@media screen and (orientation: portrait) {
+	.lander {
+		background-image: url("/resources/Boat-Lander.jpg");
+		background-attachment: scroll;
+		
+	}
 }

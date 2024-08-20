@@ -5,7 +5,7 @@ function Lander() {
         <h3 className="top-1/5">WELCOME TO</h3>
         <img src="logo-png-white.png" width="192" height="192" />
         <h3 className="bottom-1/5">Rugby</h3>
-        <img src="scroll.gif" className="scroll" />
+        <img src="/resources/scroll.gif" className="scroll" />
       </section>
     </>
   );

@@ -3,7 +3,7 @@ import ProductGrid from '../components/ProductGrid'
 
 import '../styles/Navbar.css'
 import '../styles/index.css'
-import '../styles/menu.css'
+import '../styles/Menu.css'
 
 import { useParams } from 'react-router-dom'
 

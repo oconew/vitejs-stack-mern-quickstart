@@ -10,6 +10,7 @@ try {
 } catch (e) {
   console.error(e)
 }
+//console.log(conn)
 let db
 if (conn) {
   db = conn.db('db')

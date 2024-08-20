@@ -103,7 +103,7 @@ function Slider(props: any) {
             id="menu-2"
             label="Mains"
             cssLabel="mains"
-            link="/menu/8"
+            link="/menu/mains"
             n={1}
             current={0}
           />
@@ -135,7 +135,7 @@ function Slider(props: any) {
             id="menu-6"
             label="Burgers & Pizzas"
             cssLabel="burgers-pizzas"
-            link="/menu/12"
+            link="/menu/burgers-pizzas"
             n={5}
             current={0}
           />
@@ -143,7 +143,7 @@ function Slider(props: any) {
             id="menu-7"
             label="Sweet Treats"
             cssLabel="desserts"
-            link="/menu/13"
+            link="/menu/desserts"
             n={6}
             current={0}
           />

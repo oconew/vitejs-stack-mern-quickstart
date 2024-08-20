@@ -14,7 +14,7 @@ function VideoHero() {
             maxHeight: "56.25vw !important",
           }}
         >
-          <source src="/tomato_video.mp4" type="video/mp4" />
+          <source src="/resources/tomato_video.mp4" type="video/mp4" />
         </video>
       </section>
     </>
